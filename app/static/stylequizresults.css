@@ -1,9 +1,12 @@
 .background { 
-    background-color: yellow;
+    background-color: #84e0f5;
 } 
 
 .nav-wrapper {
     font-family: 'Carter One', cursive;
+}
+.headingone{
+    font-family: 'Grenze', serif;
 }
 /*.font_styling {*/
 /*    font-family: 'Oswald', sans-serif;*/
