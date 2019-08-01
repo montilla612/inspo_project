@@ -1,7 +1,10 @@
 .background { 
-    background-color: white;
+    background-color: yellow;
 } 
 
+.nav-wrapper {
+    font-family: 'Carter One', cursive;
+}
 /*.font_styling {*/
 /*    font-family: 'Oswald', sans-serif;*/
 /*    font-size: large;*/

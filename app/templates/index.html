@@ -7,42 +7,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
-<body class="indigo lighten-4">
+<body class="white">
   
   <h1 class="center-align"> What is your mood? </h1>
   
   <form method="post" action="/results">
     <p>
       <label class="block">
-        <input name="mood" type="radio" value="HAPPY" checked />
+        <input name="mood" type="radio" value="happy" checked />
         <span>Happy</span>
       </label>
     </p>
     <p>
       <label class="block">
-        <input name="mood" type="radio" value="SAD" />
+        <input name="mood" type="radio" value="sad" />
         <span>Sad</span>
       </label class="block">
     </p>
     <p>
       <label class="block">
-        <input name="mood" type="radio" value="AMBITIOUS"  />
+        <input name="mood" type="radio" value="ambitious"  />
         <span>Ambitious</span>
       </label>
     </p>
     <p>
       <label class="block">
-        <input name="mood" type="radio" value="WOKE"  />
-        <span>Woke</span>
-      </label>
-    </p>
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="ANGRY" />
+        <input name="mood" type="radio" value="angry" />
         <span>Angry</span>
       </label>
       <br></br>
-      <input class="z-depth-1" type="submit" name="submit"/>
+      <input type="submit" name="submit"/>
     </p>
   </form>
   
@@ -73,7 +67,7 @@
   
   
   <form method="post" action="/quiz">
-    <button class= "btn-large pulse"><i class="material-icons" type="submit" formtarget="_blank"></i>Depression Quiz</button>
+    <button class= "btn-large pulse"><i class="material-icons" type="submit" formtarget="_blank"></i>quiz</button>
   </form>
   
 

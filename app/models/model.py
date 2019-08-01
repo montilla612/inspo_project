@@ -56,8 +56,10 @@ def find_quote(mood):
 
 
 def color(mood):
-    if mood == "Happy":
-        return "yellow lighten-4"
+    if mood.capitalize() == "Happy":
+        mood_color = "yellow lighten-4"
+        return color(mood)
+    
     
         
     
