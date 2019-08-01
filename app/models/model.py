@@ -55,7 +55,13 @@ def find_quote(mood):
     return find_quote(mood)
 
 
-
+def color(mood):
+    if mood == "Happy":
+        return "yellow lighten-4"
+    
+        
+    
+    
     
     
     

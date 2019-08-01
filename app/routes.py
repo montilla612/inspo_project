@@ -19,6 +19,8 @@ def results():
         user_mood = user_data ["mood"]
         print(user_mood)
         mood_quote = model.find_quote(user_mood)
+        
+    
         print(mood_quote)
         return render_template("results.html", user_mood = user_mood, mood_quote = mood_quote) 
 
