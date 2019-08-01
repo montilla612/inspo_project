@@ -2,16 +2,34 @@
   display: block;
   width: 100%;
   border-radius: 40px;
-  border: 2px solid #800080;
+  border: 6px solid #800080;
   background-color: #D3D3D3;
-  padding: 14px 28px;
-  font-size: 75px;
+  padding: 15px 30px;
+  font-size: 100px;
   cursor: pointer;
   text-align: center;
 }
 
 body {
-  border: 1px solid red; 
+  border: green; 
   padding-left: 50px;
+  padding-right: 50px;
   
 }
+
+
+.background { 
+    background-color: #f8bbd0;
+} 
+
+.font_styling {
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+}
+
+.spacing {
+    padding: 50px 100px 30px 30px;
+}
+
+
+

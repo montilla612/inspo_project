@@ -1,141 +1,85 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Welcome to the Mood Booster</title>
-        <link rel="stylesheet" type="text/css" href="/static/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-        
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-        <link rel = "stylesheet" href = "material.min.css">
-        <script src = "material.min.js"></script>
-        <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">   
-        
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to the Mood Booster</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body class="indigo lighten-4">
+  
+  <h1 class="center-align"> What is your mood? </h1>
+  
+  <form method="post" action="/results">
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="HAPPY" checked />
+        <span>Happy</span>
+      </label>
+    </p>
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="SAD" />
+        <span>Sad</span>
+      </label class="block">
+    </p>
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="AMBITIOUS"  />
+        <span>Ambitious</span>
+      </label>
+    </p>
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="WOKE"  />
+        <span>Woke</span>
+      </label>
+    </p>
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="ANGRY" />
+        <span>Angry</span>
+      </label>
+      <br></br>
+      <input class="z-depth-1" type="submit" name="submit"/>
+    </p>
+  </form>
+  
+  <!--<form>-->
     
-    </head>
-    <body class="blue lighten-4">
-        
-        
-        
-        
-        <h1 class="center-align">How are you feeling today?</h1>
-        <p class="center-align">We will help you with whatever mood you are feeling today</p>
-        <form method="post" action="/results">
-            <label for="mood">What emotion are you feeling today?</label>
-            <input type="text" name = "mood"/>
-            <input type="submit" value="Submit"/>
-            <select name="cars">
-                <option value="Sad">Sad</option>
-                <option value="Happy">Happy</option>
-                <option value="Angry">Angry</option>
-                <option value="Ambitious">Ambitious</option>
-            </select>
-            <br><br>
-            <!--<input type="submit">-->
-        <!--<button type="button">Click Me!</button>-->
-        <ul>
-            <li>
-            <button type="button" class="block">
-                <a href="/happy">Happy</a>
-            </button>
-            </li>
-            <br></br>
-            <li>
-            <button type="button" class="block">
-                <a href="/sad">Sad</a> 
-            </button>
-            </li>
-         <br></br>
-            <li>
-            <button type="button" class="block">
-                <a href="/angry">Angry</a> 
-            </button>
-            </li>
-          <br></br>
-            <li>
-            <button type="button" class="block">
-                <a href="/ambitious">Ambitious</a> 
-            </button>
-            </li>
-         <br></br>
-            <li>
-            <button type="button" class="block">
-                <a href="http://3.16.14.39:5000/happy">Heartbroken</a> 
-            </button>
-            </li>
-                
-        </ul>
-        </form>
-        
-       <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-         <div class = "mdl-layout__drawer">
-            <span class = "mdl-layout-title">List of emotions</span>
-            <nav class = "mdl-navigation">
-               <a class = "mdl-navigation__link" href = "">Ambitious</a>
-               <a class = "mdl-navigation__link" href = "">Sad</a>
-               <a class = "mdl-navigation__link" href = "">Angry</a>
-               <a class = "mdl-navigation__link" href = "">Heartbroken</a>
-            </nav>
-         </div>
-         
-            <div class = "page-content" style = "padding-left:100px;">Hello World!</div>
-         </main>
-      </div>
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-          <i class="material-icons">Depression Hotline</i>
-      </button>
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-      <i class="material-icons">Survey Button</i>
-      </button>
-        <form>
-            <div class="dropdown">
-              <button class="dropbtn">Dropdown</button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-             </div>
-            </div>
-        </form>
-        
-        
-        <!-- THIS IS WHERE THE QUIZ STARTS-->
-        <style>
-        .demo-card-wide.mdl-card {
-          width: 512px;
-        }
-        .demo-card-wide > .mdl-card__title {
-          color: #fff;
-          height: 176px;
-          background: url('../assets/demos/welcome_card.jpg') center / cover;
-        }
-        .demo-card-wide > .mdl-card__menu {
-          color: #fff;
-        }
-        </style>
-        
-        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Welcome</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-            Depression Quiz
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              Get Started
-            </a>
-          </div>
-          <div class="mdl-card__menu">
-            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-              <i class="material-icons">share</i>
-            </button>
-          </div>
-        </div>
-        
-        
-    </body>
+    
+  <!--</form>-->
+  <!-- Badge/button for Quiz -->
+
+  <!--This is Leo's-->
+  <!--<form action="/action_page.php" method="get">-->
+  <!--  First name: <input type="text" name="fname"><br>-->
+  <!--  Last name: <input type="text" name="lname"><br>-->
+  <!--  <button type="submit">Submit</button>-->
+  <!--  <button type="submit" formmethod="post">Submit using POST</button>-->
+  <!--</form>-->
+  
+  
+  <!--<form>-->
+  <!--  <input type="radio" name="gender" value="male" checked> Male<br>-->
+  <!--  <input type="radio" name="gender" value="female"> Female<br>-->
+  <!--  <input type="radio" name="gender" value="other"> Other-->
+  <!--</form>-->
+  
+  
+  
+  
+  
+  
+  <form method="post" action="/quiz">
+    <button class= "btn-large pulse"><i class="material-icons" type="submit" formtarget="_blank"></i>Depression Quiz</button>
+  </form>
+  
+
+  
+
+
+</body>
+
 </html>
